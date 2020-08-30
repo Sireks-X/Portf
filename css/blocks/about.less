@@ -1,0 +1,55 @@
+// main: ../style.less
+.about {
+    margin-bottom: 130px;
+}
+.about__inner {
+    display: flex;
+    align-items: center;
+}
+
+.about__title{
+    font-size: 3rem;
+    color: @gray;
+    font-weight: 700;
+}
+.about__bigtitle {
+    font-size: 6.1rem;
+    color: #dedede;
+    font-weight: 700;
+}
+
+.about__content {
+    margin-left: 50px;
+}
+
+.about__text {
+    font-size: 0.8rem;
+    line-height: 24px;
+    font-weight: 300;
+    color: #717072;
+    margin-bottom: 80px;
+}
+
+.about__buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+.about__btn {
+    font-size: 1.06rem;
+    font-family: inherit;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid @gray;
+    background-color: transparent;
+
+    &:hover{
+        border: 2px solid @black;
+        background-color: @black;
+        color: @white;
+        box-shadow: 3px 2px 8px 0px rgba(0,0,0,0.25);
+        transition: .2s linear;
+    }
+}

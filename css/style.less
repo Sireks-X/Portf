@@ -1,0 +1,38 @@
+// compress: true
+@import "var";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 1rem;
+
+    color: @black;
+}
+
+/* Blocks */ 
+@import "blocks/container";
+@import "blocks/header.less";
+@import "blocks/intro.less";
+@import "blocks/works.less";
+@import "blocks/about.less";
+@import "blocks/testimonial.less";
